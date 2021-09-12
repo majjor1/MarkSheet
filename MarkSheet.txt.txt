@@ -2,7 +2,7 @@ void main(){
   String name = "Syed Abdul Sami";
   print("Name : " + name);
  String fname = "Syed Abdul Razzaq";
-  print("Father  Name :" + Fname);
+  print("Father  Name :" + fname);
  var roll = 1277444;
   print("Roll Number : ${roll}");
   var eng = 34;
