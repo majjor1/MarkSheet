@@ -1,56 +1,83 @@
 void main(){
   String name = "Syed Abdul Sami";
   print("Name : " + name);
- String Fname = "Syed Abdul Razzaq";
+ String fname = "Syed Abdul Razzaq";
   print("Father  Name :" + Fname);
  var roll = 1277444;
   print("Roll Number : ${roll}");
- var eng = 90;
-  var math = 77;
-  var urdu = 60;
-  var phy = 80;
-  var che = 70;
-  
-  if(eng >= 33){
-  print("English : ${eng}  (PASS)");
+  var eng = 34;
+  var eror ;
+  var math = 35;
+  var urdu = 170;
+  var phy = 37;
+  var che = 39;
+  print("Subje0ct       ObtainMark");
+  if(  eng > 100){
+    print("Eror");
+  }
+  else if( eng >= 33 || eng == 100){
+   print("English :        ${eng}  (PASS)");
   }
   else{
-  print("English : ${eng} (FAIL)");
+  print("English :         ${eng} (FAIL)");
     
   }
-  if(math >= 33){
-  print("Math : ${math}  (PASS)");
+  if(math > 100){
+    print("math :           Eror");
+  }
+  else if( math >= 33 || math == 100){
+  print("Math :            ${math}  (PASS)");
   }
   else{
-  print("Math : ${math} (FAIL)");
+  print("Math :            ${math} (FAIL)");
   }
-  if(urdu >= 33){
-  print("Urdu : ${urdu}  (PASS)");
+  if(urdu > 100){
+    print("Urdu :           Eror");
   }
-  else{
-  print("Urdu : ${urdu} (FAIL)");
-  }
-  if(phy >= 33){
-  print("Physic : ${phy}  (PASS)");
+ else if(urdu >= 33){
+  print("Urdu :            ${urdu}  (PASS)");
   }
   else{
-  print("Physic : ${phy} (FAIL)");
+  print("Urdu :            ${urdu} (FAIL)");
   }
-  if(che >= 33){
-  print("Chemistry : ${che}  (PASS)");
+  if(phy > 100){
+    print("Physic :         Eror");
+  }
+  else if(phy >= 33){
+  print("Physic :          ${phy}  (PASS)");
   }
   else{
-  print("Chemistry : ${che} (FAIL)");
+  print("Physic :          ${phy} (FAIL)");
+  }
+  if(che > 100){
+    print("Chemistry :      Eror");
+  }
+  else if(che >= 33){
+  print("Chemistry :       ${che}  (PASS)");
+  }
+  else{
+  print("Chemistry :       ${che} (FAIL)");
   }
 
   var tmark = 500;
-  print("Total Mark  : ${tmark}");
+  print("\t\n Total Mark  : ${tmark}");
   
-  var obtMark = eng + math + urdu + phy + che ;
-  print("Obtain Mark : ${obtMark}");
-  var avg = obtMark/tmark*100;
-  print("Percentage : ${avg}");
-  if(avg >= 85){
+  var obtmark = eng + math + urdu + phy + che;
+  if(obtmark <= 500 ){
+  print("Obtain Mark : ${obtmark}");   
+  }else{
+  print("Obtain Mark : Eror");
+  }
+  var avg = obtmark/tmark*100;
+  if(avg >100){
+    print("Percentage : Error");
+  }else{
+  print("Percentage : ${avg}");    
+  }
+  if(avg > 100){
+    print("Grade : Eror");
+  }
+  else if(avg >= 85){
     print("Grade : A+");
   }
    else if(avg >= 65){
