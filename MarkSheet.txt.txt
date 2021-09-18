@@ -5,15 +5,20 @@ void main(){
   print("Father  Name :" + fname);
  var roll = 1277444;
   print("Roll Number : ${roll}");
-  var eng = 34;
-  var eror ;
-  var math = 35;
-  var urdu = 170;
-  var phy = 37;
-  var che = 39;
+  var eng = 50;
+  var math = 15;
+  var urdu = 70;
+  var phy = 33;
+  var che = 89;
+  var obtmark = eng + math + urdu + phy + che;;
   print("Subje0ct       ObtainMark");
-  if(  eng > 100){
-    print("Eror");
+  
+    if(  eng > 100){
+    print("English :        Eror ");
+      obtmark = obtmark - eng;
+  }
+  else if (eng <= 0){
+    print("English :        Eror ");
   }
   else if( eng >= 33 || eng == 100){
    print("English :        ${eng}  (PASS)");
@@ -24,6 +29,7 @@ void main(){
   }
   if(math > 100){
     print("math :           Eror");
+      obtmark = obtmark - math;
   }
   else if( math >= 33 || math == 100){
   print("Math :            ${math}  (PASS)");
@@ -33,6 +39,7 @@ void main(){
   }
   if(urdu > 100){
     print("Urdu :           Eror");
+      obtmark = obtmark - urdu;
   }
  else if(urdu >= 33){
   print("Urdu :            ${urdu}  (PASS)");
@@ -42,6 +49,7 @@ void main(){
   }
   if(phy > 100){
     print("Physic :         Eror");
+      obtmark = obtmark - phy;
   }
   else if(phy >= 33){
   print("Physic :          ${phy}  (PASS)");
@@ -51,6 +59,7 @@ void main(){
   }
   if(che > 100){
     print("Chemistry :      Eror");
+      obtmark = obtmark - che;
   }
   else if(che >= 33){
   print("Chemistry :       ${che}  (PASS)");
@@ -62,8 +71,8 @@ void main(){
   var tmark = 500;
   print("\t\n Total Mark  : ${tmark}");
   
-  var obtmark = eng + math + urdu + phy + che;
-  if(obtmark <= 500 ){
+   
+  if(obtmark <= tmark ){
   print("Obtain Mark : ${obtmark}");   
   }else{
   print("Obtain Mark : Eror");
@@ -93,6 +102,6 @@ void main(){
     print("Grade  : D");
   }
   else{
-    print(" Fail");
+    print("Result :  Fail");
   }
  }
